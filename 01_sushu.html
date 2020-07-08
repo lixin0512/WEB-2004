@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  for(var i=2;i<=1000;i++){
+            var  isSushu = true;
+            for (var j = 2; j < i-1; j++){
+                        if (i%j == 0) {
+                            isSushu = false;
+                           break;
+                        }
+                       
+                    }
+                    if (isSushu)
+                    {
+                        console.log(i);
+                        ;
+                    }
+
+  }
+</script>
+</body>
+</html>

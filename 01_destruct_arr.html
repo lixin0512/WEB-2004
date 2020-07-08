@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  var shop=[
+    {我:"小米",擦:"小米1",你:"小米2"},
+    {002:"苹果"},
+    {003:"华硕"},
+    {004:"联想"}
+    ];
+    var [p1,,p3]=shop;
+    console.log(p1)//解构第一次得到一个对象
+    var {我,擦,你}=p1//即用作属性,又用作属性值
+    console.log(我,擦,你)
+    //function fun({a:a=60,b:b=60,c:c=60}){//即用作属性,有用做属性值
+      function fun({a=60,b=60,c=60}){//简写
+      console.log(a+b+c)
+    }
+    // 三个值都用默认值
+    fun({})//180
+    //要第二个和第三个
+    fun({a:80})//200
+    //要第一个和第三个
+    fun({b:50,c:100})
+</script>
+</body>
+</html>
